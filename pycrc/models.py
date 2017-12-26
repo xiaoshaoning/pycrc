@@ -314,8 +314,79 @@ class CrcModels(object):
         'xor_out':       0xffffffffffffffff,
         'check':         0x995dc9bbdf1939fa,
     })
+    models.append({
+        'name':         'crc-lte-24a',
+        'width':         24,
+        'poly':          0x864cfb,
+        'reflect_in':    False,
+        'xor_in':        0x000000,
+        'reflect_out':   False,
+        'xor_out':       0x000000,
+        'check':         0xcde703,
+    })
+    models.append({
+        'name':         'crc-lte-24b',
+        'width':         24,
+        'poly':          0x800063,
+        'reflect_in':    False,
+        'xor_in':        0x000000,
+        'reflect_out':   False,
+        'xor_out':       0x000000,
+        'check':         0x23ef52,
+    })
+    models.append({
+        'name':         'crc-lte-16',
+        'width':         16,
+        'poly':          0x1021,
+        'reflect_in':    False,
+        'xor_in':        0x0,
+        'reflect_out':   False,
+        'xor_out':       0x0,
+        'check':         0x31c3,
+    })
+    models.append({
+        'name':         'crc-lte-8',
+        'width':         8,
+        'poly':          0x9b,
+        'reflect_in':    False,
+        'xor_in':        0x0,
+        'reflect_out':   False,
+        'xor_out':       0x0,
+        'check':         0xea,
+    })
+    models.append({
+        'name':          'crc-5g-11',
+        'width':         11,
+        'poly':          0x621,
+        'reflect_in':    False,
+        'xor_in':        0x0,
+        'reflect_out':   False,
+        'xor_out':       0x0,
+        'check':         0x11a,
+    })
+    models.append({
+        'name':           'crc-5g-6',
+        'width':          6,
+        'poly':           0x11,
+        'reflect_in':     False,
+        'xor_in':         0x0,
+        'reflect_out':    False,
+        'xor_out':        0x0,
+        'check':          0x35,
+    })
+    models.append({
+        'name':           'crc-5g-24c',
+        'width':          24,
+        'poly':           0xb2b117,
+        'reflect_in':     False,
+        'xor_in':         0x000000,
+        'reflect_out':    False,
+        'xor_out':        0x0000000,
+        'check':          0xf48279,
+    })
 
 
+    
     def names(self):
         """
         This function returns the list of supported CRC models.
